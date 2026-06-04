@@ -1,5 +1,3 @@
-# My-lovey-wubby-Zyrich-
-HAPPY BIRTHDAY LOVEY!!
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,7 +18,6 @@ HAPPY BIRTHDAY LOVEY!!
         min-height:100vh;
         display:flex;
         justify-content:center;
-        align-items:center;
         padding:20px;
     }
 
@@ -29,6 +26,163 @@ HAPPY BIRTHDAY LOVEY!!
         max-width:800px;
         width:100%;
         padding:40px;
+        border-radius:25px;
+        box-shadow:0 10px 30px rgba(0,0,0,0.1);
+        text-align:center;
+    }
+
+    h1{
+        color:#e0a800;
+        margin-bottom:10px;
+        font-size:2.5rem;
+    }
+
+    h2{
+        color:#555;
+        margin-bottom:20px;
+        font-weight:normal;
+    }
+
+    .heart{
+        font-size:2rem;
+        margin:15px 0;
+    }
+
+    .letter{
+        text-align:left;
+        line-height:1.8;
+        color:#444;
+        margin-top:20px;
+    }
+
+    section{
+        margin-top:40px;
+        text-align:center;
+    }
+
+    #timer{
+        font-size:2rem;
+        color:#e0a800;
+        margin-top:10px;
+    }
+
+    .item{
+        background:#fff7d6;
+        padding:12px;
+        margin:8px 0;
+        border-radius:10px;
+    }
+
+    iframe{
+        width:100%;
+        margin-top:10px;
+    }
+
+    .footer{
+        margin-top:30px;
+        color:#888;
+        font-style:italic;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+    <h1>Happy Birthday, Zyrich 💛</h1>
+    <h2>A little corner of the internet made just for you.</h2>
+
+    <div class="heart">🌼 ☀️ 💛 ☀️ 🌼</div>
+
+    <div class="letter">
+        <p>Dear Zyrich,</p>
+        <br>
+
+        <p>
+        Today is your day, and I hope life gives you warmth, peace, and happiness.
+        You deserve soft mornings, calm nights, and everything that makes you feel safe and loved.
+        </p>
+
+        <br>
+
+        <p>
+        Thank you for existing in a way that makes life brighter for others.
+        </p>
+
+        <br>
+
+        <p>
+        Happy Birthday, Zyrich.
+        </p>
+
+        <br>
+
+        <p><strong>— Masaru</strong></p>
+    </div>
+
+    <!-- PLAYLIST -->
+    <section>
+        <h2>🎵 Songs That Remind Me of You</h2>
+
+        <iframe style="border-radius:12px"
+        src="https://open.spotify.com/embed/playlist/YOUR_PLAYLIST_ID"
+        height="352"
+        frameborder="0"
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+        </iframe>
+    </section>
+
+    <!-- COUNTDOWN -->
+    <section>
+        <h2>⏳ Countdown to Your Birthday</h2>
+        <div id="timer">Loading...</div>
+    </section>
+
+    <!-- 12 THINGS -->
+    <section>
+        <h2>💛 12 Things That Remind Me of You</h2>
+
+        <div class="item">🌼 Daisies</div>
+        <div class="item">💛 Yellow</div>
+        <div class="item">🧸 Stuff toys</div>
+        <div class="item">🎧 Headphones</div>
+        <div class="item">🍝 Carbonara</div>
+        <div class="item">✒️ Fountain pens</div>
+        <div class="item">🎨 Drawing books</div>
+        <div class="item">👓 Glasses</div>
+        <div class="item">🏸 Badminton</div>
+        <div class="item">☀️ Sun plushies</div>
+        <div class="item">🌻 Flowers</div>
+        <div class="item">😊 Your smile</div>
+    </section>
+
+    <div class="footer">
+        Made with love for your special day 💛
+    </div>
+
+</div>
+
+<script>
+const birthday = new Date("June 5, 2026 00:00:00").getTime();
+
+setInterval(() => {
+    const now = new Date().getTime();
+    const distance = birthday - now;
+
+    const days = Math.floor(distance / (1000*60*60*24));
+    const hours = Math.floor((distance%(1000*60*60*24))/(1000*60*60));
+    const minutes = Math.floor((distance%(1000*60*60))/(1000*60));
+    const seconds = Math.floor((distance%(1000*60))/1000);
+
+    document.getElementById("timer").innerHTML =
+        days + "d " + hours + "h " + minutes + "m " + seconds + "s";
+
+}, 1000);
+</script>
+
+</body>
+</html>        padding:40px;
         border-radius:25px;
         box-shadow:0 10px 30px rgba(0,0,0,0.1);
         text-align:center;
